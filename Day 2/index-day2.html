@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            border: 1px solid #333;
+            padding: 8px 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p contenteditable="true">This is editable</p>
+        <p dir="rtl">The direction of the text is from right to left</p>
+        <p title="mydemo">Hover your mouse here to see the title</p>
+        <p id="id1">ID should be unoque for each element</p>
+    </div>
+
+    <div dir="rtl">
+        <p>This webpage is authored in English language</p>
+        <p contenteditable="true" spellcheck="true" lang="en">This paragrph is edittable</p>
+    </div>
+
+    <header>
+        <h1>Sign Up!</h1>
+    </header>
+    <article>
+        <form action="success.html" method="get">
+            <table>
+                <tr>
+                    <td><br><label for="username">Username:</label></td>
+                    <td><br><input type="text" id="username" placeholder="Enter your username" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="email_id">Email ID:</label></td>
+                    <td><input type="email" id="email_id" placeholder="Enter your email ID" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" placeholder="Enter your password" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td><label for="male">Male<input type="radio" id="male" name="gender" value="M" />&nbsp; <label
+                                for="female">Female<input type="radio" id="female" name="gender" value="F" /></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">DOB:</label></td>
+                    <td><input type="date" id="dob" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="phone_no">Phone number:</label></td>
+                    <td><input type="text" id="phone_no" placeholder="Enter your contact number" pattern="+ [0-9] {12}"
+                            required /></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country:</label></td>
+                    <td><select id="country" placeholder="Select your country">
+
+                            <option value="India" />India
+
+                            <option value="India" />USA
+
+                            <option value="India" />UK
+
+                            <option value="India" />Canada
+
+                            <option value="India" />Belgium
+
+                            <option value="India" />France
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label id="language">Languages Known:</label></td>
+                    <td><input type="checkbox" name="language" id="english" value="English" checked="checked" /><label
+                            for="english">
+                            English </label> <input type="checkbox" name="language" id="hindi" value="Hindi" /><label
+                            for="hindi"> Hindi
+                        </label> <input type="checkbox" name="language" id="french" value="French" /><label
+                            for="french"> French </label></td>
+                </tr>
+                <tr>
+                    <td><label for="pic">Profile pic:</label></td>
+                    <td><input type="file" id="pic" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="yourself" dir="ltr">About yourself:</label></td>
+                    <td><textarea contenteditable="true" spellcheck="true"></textarea></td>
+                    <!-- Add contenteditable and spellcheck attribute -->
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Register" />
+
+                    <td><input type="reset" value="Reset" />
+
+                </tr>
+            </table>
+        </form> <br /> <br /> <br /> <br />
+    </article>
+    <footer>
+        <nav> About Us | Privacy Policy | Contact Us | FAQ | Terms & Conditions </nav> Copyright &copy; 2018
+        | Giri
+    </footer>
+    <aside> Like and Connect with us FB Twitter g+ </aside>
+
+    <br /> <br />
+    <table>
+        <caption>MERN Stack Developer Program</caption>
+        <colgroup>
+            <col>
+            <col style="background-color: lightblue;">
+            <col span="2" style="background-color: lime;">
+            <col style="background-color: lightcoral;">
+        </colgroup>
+        <tr>
+            <th>Technology</th>
+            <td>MongoDB</td>
+            <td>Node</td>
+            <td>Express</td>
+            <td>React</td>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td>The Database</td>
+            <td>Node is the base for server side scripting</td>
+            <td>JS framework for web server development</td>
+            <td>JS library to design the Front-end</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <caption>Mobile Inventories Available at Hussain's Shopping!</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Product Name</th>
+                <th colspan="2">Product Details</th>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <th>Product Description</th>
+            </tr>
+        </thead>
+    </table>
+
+    <br><br><br>
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="number" id="b" name="b" value="10" /> +
+        <input type="number" id="a" name="a" value="10" /> =
+        <output name="result" for="a b">20</output>
+    </form>
+
+    <br><br>
+    <form oninput="O1.value = parseInt(R1.value)">
+        Rate your experience:<input type="range" id="R1" min="0" max="100" step="1" />
+        <output for="R1" id="O1"></output>
+    </form>
+
+    <br><br>
+    <h2>Rate your shopping experience:</h2>
+
+    <form
+        oninput="M1.value = parseInt(R1.value);M2.value = parseInt(R2.value);M3.value = parseInt(R3.value);M4.value = parseInt(R4.value);">
+        Delivery of product on time : <input type="range" id="R1" step="5"> <meter id="M1" min="0" max="100"
+            value="50"></meter><br /><br />
+        Product quality : <input type="range" id="R2" step="5"> <meter id="M2" min="0" max="100" value="50"></meter>60
+        of
+        100</meter><br /><br />
+        How friendly the site is : <input type="range" id="R3" step="5"> <meter id="M3" min="0" max="100"
+            value="50"></meter>20 of
+        100</meter><br /><br>
+        Were you able to find the product which you were looking for?:
+        <input type="range" id="R4" step="5"> <meter id="M4" min="0" max="100" value="50"></meter><br /><br />
+    </form>
+
+    <br><br><br>
+    <h4>Embedding image, audio and video</h4>
+    <!-- embedding image into the web page -->
+    Sea View Image: <br />
+    <img src="assets/tropicalSea.jpg" alt="Tropical Sea Image" width="350" height="250"> <br> <br>
+    <!-- embedding audio into the web page -->
+    Listen to some music: <br />
+    <audio src="assets/music.mp3" controls="controls"></audio> <br /> <br>
+    Sea View Video: <br />
+    <!-- embedding video into the web page -->
+    <video src="assets/seaView.mp4" controls="controls" width="350" height="250"></video>
+
+    <br><br><br>
+    <iframe src="https://www.youtube.com/embed/HD13eq_Pmp8?si=U9ihuSQrfY_c0cHm"></iframe>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/HD13eq_Pmp8?si=U9ihuSQrfY_c0cHm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+    <p>This demo loads the target of hyperlink into the same web page using iframe</p>
+    <a href="https://www.youtube.com/embed/HD13eq_Pmp8?si=U9ihuSQrfY_c0cHm" target="myFrame">
+        Click here to load webpage content into iframe.
+    </a></br>
+    <iframe name="myFrame" width="600" height="400"></iframe>
+
+</html>

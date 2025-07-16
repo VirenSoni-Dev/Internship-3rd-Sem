@@ -1,0 +1,214 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Day 2</title>
+    <style>
+        body {
+            background-image: url('assets/download.png');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #cccccc;
+            min-height: 100vh;
+            margin: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+        }
+        
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        th, td {
+            width: 150px;
+            padding: 4px;
+        }
+
+        th {
+            background-color: rgb(17, 92, 179);
+            color: white;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fff;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Viren Soni</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Percentage/SGPA</th>
+                <th>Division</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Xth</td>
+                <td>89.60</td>
+                <td>Ist</td>
+            </tr>
+            <tr>
+                <td>XIIth</td>
+                <td>82</td>
+                <td>Ist</td>
+            </tr>
+            <tr>
+                <td>B.Tech 1st sem</td>
+                <td>8.78</td>
+                <td>Ist</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Table with Different Border Styles</title>
+<style>
+  table {
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  th, td {
+    padding: 8px 12px;
+    text-align: center;
+  }
+
+  /* None */
+  #border-none, #border-none td, #border-none th {
+    border: none;
+  }
+
+  /* Solid */
+  #border-solid, #border-solid td, #border-solid th {
+    border: 2px solid black;
+  }
+
+  /* Dotted */
+  #border-dotted, #border-dotted td, #border-dotted th {
+    border: 2px dotted blue;
+  }
+
+  /* Dashed */
+  #border-dashed, #border-dashed td, #border-dashed th {
+    border: 2px dashed green;
+  }
+
+  /* Double */
+  #border-double, #border-double td, #border-double th {
+    border: 4px double purple;
+  }
+
+  /* Groove */
+  #border-groove, #border-groove td, #border-groove th {
+    border: 4px groove orange;
+  }
+
+  /* Ridge */
+  #border-ridge, #border-ridge td, #border-ridge th {
+    border: 4px ridge brown;
+  }
+
+  /* Inset */
+  #border-inset, #border-inset td, #border-inset th {
+    border: 4px inset gray;
+  }
+
+  /* Outset */
+  #border-outset, #border-outset td, #border-outset th {
+    border: 4px outset teal;
+  }
+</style>
+</head>
+<body>
+
+<h2>Border: None</h2>
+<table id="border-none">
+  <tr><th>Header</th><th>Header</th></tr>
+  <tr><td>Cell</td><td>Cell</td></tr>
+</table>
+
+<h2>Border: Solid</h2>
+<table id="border-solid">
+  <tr><th>Header</th><th>Header</th></tr>
+  <tr><td>Cell</td><td>Cell</td></tr>
+</table>
+
+<h2>Border: Dotted</h2>
+<table id="border-dotted">
+  <tr><th>Header</th><th>Header</th></tr>
+  <tr><td>Cell</td><td>Cell</td></tr>
+</table>
+
+<h2>Border: Dashed</h2>
+<table id="border-dashed">
+  <tr><th>Header</th><th>Header</th></tr>
+  <tr><td>Cell</td><td>Cell</td></tr>
+</table>
+
+<h2>Border: Double</h2>
+<table id="border-double">
+  <tr><th>Header</th><th>Header</th></tr>
+  <tr><td>Cell</td><td>Cell</td></tr>
+</table>
+
+<h2>Border: Groove</h2>
+<table id="border-groove">
+  <tr><th>Header</th><th>Header</th></tr>
+  <tr><td>Cell</td><td>Cell</td></tr>
+</table>
+
+<h2>Border: Ridge</h2>
+<table id="border-ridge">
+  <tr><th>Header</th><th>Header</th></tr>
+  <tr><td>Cell</td><td>Cell</td></tr>
+</table>
+
+<h2>Border: Inset</h2>
+<table id="border-inset">
+  <tr><th>Header</th><th>Header</th></tr>
+  <tr><td>Cell</td><td>Cell</td></tr>
+</table>
+
+<h2>Border: Outset</h2>
+<table id="border-outset">
+  <tr><th>Header</th><th>Header</th></tr>
+  <tr><td>Cell</td><td>Cell</td></tr>
+</table>
+
+</body>
+</html>
