@@ -58,8 +58,16 @@
             color: white;
         }
 
-        tr:nth-child(even) {
+        tr {
+          transition: background-color 0.3s ease;
+        }
+
+        tr:nth-child(odd) {
             background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffffff;
         }
 
         tr:hover {
@@ -75,7 +83,7 @@
     </div>
 
     <table>
-    <caption><strong>Student Details</strong></caption>
+    <caption style="color: white;"><strong>Student Details</strong></caption>
     <thead>
       <tr>
         <th>Rollno.</th>
