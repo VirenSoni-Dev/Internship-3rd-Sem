@@ -1,54 +1,97 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <title>Personal Portfolio - Viren Soni</title>
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="images/profile.jpg" width="250px" alt="Profile Photo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="home">
-                <div class="left">
-                    <h1>Hi, I am <span id="name">Viren Soni</span></h1>
-                    <p>I am a passionate Web Developer and Programmer</p>
-                </div>
-                <div class="right">
-                    <img src="images/profile.jpg" width="250px" alt="Profile pic">
-                </div>
-            </section>
 
-            <section id="about">
-                <h1>About</h1>
-      
-                <table>
-                    <caption>Academic Qualifications</caption>
-                    <thead>
-                        <tr>
-                            <th>Class/Year</th>
-                            <th>Percentage/SGPA</th>
-                            <th>Division</th>
-                            <th>Institution</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>X<sup>th</sup></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </main>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio - Viren Soni</title>
+</head>
+
+<body>
+    <header>
+        <div class="h-cont">
+            <div class="logo">
+                VS
+            </div>
+            <div class="title">
+                <h1>My Personal Portfolio</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home">
+            <div class="left">
+                <p>Hi, I am</p>
+                <p id="name">Viren Soni</p>
+                <p>I am a passionate Web Developer<br>and Programmer and currently pursuing my B.Tech. from SKIT, Jaipur</p>
+            </div>
+            <div class="right">
+                <img src="images/profile.jpg" width="250px" alt="Profile pic">
+            </div>
+        </section>
+
+        <section id="about">
+            <h1>About</h1>
+
+            <table class="aboutTable">
+                <caption><h3>Academic Qualifications</h3></caption>
+                <thead>
+                    <th>Class/Year</th>
+                    <th>Percentage/SGPA</th>
+                    <th>Division</th>
+                    <th>Institution</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>X<sup>th</sup></td>
+                        <td>89.60</td>
+                        <td>1st</td>
+                        <td>Maheshwari Public School, Pratap Nagar</td>
+                    </tr>
+                    <tr>
+                        <td>XII<sup>th</sup></td>
+                        <td>82.00</td>
+                        <td>1st</td>
+                        <td>Rahul Shikshan Sansthan Sr. Sec. School</td>
+                    </tr>
+                    <tr>
+                        <td>B.Tech. 1st Sem</td>
+                        <td>8.78</td>
+                        <td>1st</td>
+                        <td>Swami Keshavanand Institute of Technology, Management & Gramothan</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="iframe">
+            <p>One of my Favourite Videos</p>
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/8yh9BPUBbbQ?si=tufD4kah_j71hErB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+        </section>
+
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <table class=".contactTable">
+                <tr>
+                    <td>Mail</td>
+                    <td><a href="mailto:b241137@skit.ac.in?subject=Hello%20there">b241137@skit.ac.in</a></td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td><a href="tel:+91******5836">+91 ***** *5836</a></td>
+                </tr>
+            </table>
+            <div class="socials">
+                <a href="https://github.com/VirenSoni-Dev" target="_blank">Github</a>
+                <a href="https://linkedin.com/in/viren-soni-1245rw007" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Copyright &copy; 2025 Viren Soni. All rights reserved.
+    </footer>
+</body>
+
 </html>
