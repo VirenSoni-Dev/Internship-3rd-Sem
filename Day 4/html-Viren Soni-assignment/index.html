@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Personal Portfolio - Viren Soni</title>
 </head>
 
@@ -21,70 +23,64 @@
 
     <main class="container">
         <section id="home">
-            <div class="left">
+            <div class="top">
+                <img src="images/profile.jpg" width="250px" alt="Profile pic">
+            </div>
+            <div class="bottom">
                 <p>Hi, I am</p>
                 <p id="name">Viren Soni</p>
-                <p>I am a passionate Web Developer<br>and Programmer and currently pursuing my B.Tech. from SKIT, Jaipur</p>
-            </div>
-            <div class="right">
-                <img src="images/profile.jpg" width="250px" alt="Profile pic">
+                <p>I am a passionate Web Developer and Programmer<br>and currently pursuing my B.Tech. from SKIT, Jaipur</p>
             </div>
         </section>
 
         <section id="about">
             <h1>About</h1>
+            <p>My academic Qualifications</p>
 
-            <table class="aboutTable">
-                <caption><h3>Academic Qualifications</h3></caption>
-                <thead>
-                    <th>Class/Year</th>
-                    <th>Percentage/SGPA</th>
-                    <th>Division</th>
-                    <th>Institution</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>X<sup>th</sup></td>
-                        <td>89.60</td>
-                        <td>1st</td>
-                        <td>Maheshwari Public School, Pratap Nagar</td>
-                    </tr>
-                    <tr>
-                        <td>XII<sup>th</sup></td>
-                        <td>82.00</td>
-                        <td>1st</td>
-                        <td>Rahul Shikshan Sansthan Sr. Sec. School</td>
-                    </tr>
-                    <tr>
-                        <td>B.Tech. 1st Sem</td>
-                        <td>8.78</td>
-                        <td>1st</td>
-                        <td>Swami Keshavanand Institute of Technology, Management & Gramothan</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-wrapper">
+                <table class="aboutTable">
+                    <thead>
+                        <th>Class/Year</th>
+                        <th>Percentage/SGPA</th>
+                        <th>Division</th>
+                        <th>Institution</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>X<sup>th</sup></td>
+                            <td>89.60</td>
+                            <td>1st</td>
+                            <td>Maheshwari Public School, Pratap Nagar</td>
+                        </tr>
+                        <tr>
+                            <td>XII<sup>th</sup></td>
+                            <td>82.00</td>
+                            <td>1st</td>
+                            <td>Rahul Shikshan Sansthan Sr. Sec. School</td>
+                        </tr>
+                        <tr>
+                            <td>B.Tech. 1st Sem</td>
+                            <td>8.78</td>
+                            <td>1st</td>
+                            <td>Swami Keshavanand Institute of Technology, Management & Gramothan</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
         <section class="iframe">
-            <p>One of my Favourite Videos</p>
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/8yh9BPUBbbQ?si=tufD4kah_j71hErB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+            <h1>One of my Favourite Videos</h1>
+            <iframe width="100%" height="381.6" src="https://www.youtube.com/embed/8yh9BPUBbbQ?si=tufD4kah_j71hErB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
         <section id="contact">
             <h1>Contact Me</h1>
-            <table class=".contactTable">
-                <tr>
-                    <td>Mail</td>
-                    <td><a href="mailto:b241137@skit.ac.in?subject=Hello%20there">b241137@skit.ac.in</a></td>
-                </tr>
-                <tr>
-                    <td>Phone</td>
-                    <td><a href="tel:+91******5836">+91 ***** *5836</a></td>
-                </tr>
-            </table>
             <div class="socials">
-                <a href="https://github.com/VirenSoni-Dev" target="_blank">Github</a>
-                <a href="https://linkedin.com/in/viren-soni-1245rw007" target="_blank">LinkedIn</a>
+                <a href="mailto:b241137@skit.ac.in?subject=Hello%20there"><i class="fa-solid fa-envelope"></i> Mail</a>
+                <a href="tel:+91******5836"><i class="fa-solid fa-phone"></i> Call</a>
+                <a href="https://github.com/VirenSoni-Dev" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+                <a href="https://linkedin.com/in/viren-soni-1245rw007" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
             </div>
         </section>
     </main>

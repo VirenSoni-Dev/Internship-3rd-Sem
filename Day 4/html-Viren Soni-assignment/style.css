@@ -5,12 +5,18 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    font-size: 22px;
+}
+
 body {
     background: linear-gradient(0deg, #fff, #AB99E2) no-repeat;
 }
 
 header {
-    background-color: #291b33;
+    background-color: #291B33;
     padding: 20px 40px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
     position: sticky;
@@ -19,7 +25,7 @@ header {
 .h-cont {
     display: flex;
     align-items: center;
-    justify-content: center; /* center all items horizontally */
+    justify-content: center;
     position: relative;
 }
 
@@ -27,7 +33,7 @@ header {
     position: absolute;
     left: 0;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     letter-spacing: -1px;
     color: #9129D6;
 
@@ -36,65 +42,163 @@ header {
 .title h1 {
     margin: 0;
     font-size: 24px;
-    color: white;
+    color: #FFF;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 6px;
+    word-spacing: 8px;
 }
 
 main.container {
     max-width: 760px;
-    margin: 15% auto;
-    padding: 10px 25px;
-    background-color: white;
+    margin: 2% auto;
+    padding: 25px;
+    background-color: #291B33;
+    color: #FFF;
     border-radius: 17px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 #home {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* gap: 5px; */
+    text-align: center;
+    gap: 5px;
     border: 1px dashed #C1C1C1;
     border-radius: 16px;
     padding: 15px;
+    margin-bottom: 25px;
 }
 
-#home .left {
-    width: 70%;
-}
-
-#home .left #name {
-    font-size: 1.5em;
+#home .bottom #name {
+    font-size: 2.5em;
     font-weight: 900;
     text-transform: capitalize;
-    color: #9129D6;
+    color: #B54FF8;
+    text-shadow: 1px 1px 5px #FFFFFF59;
+    margin: 2px 0;
     cursor: pointer;
 }
 
-#home .right {
-    width: 30%;
+#about {
+    border: 1px dashed #C1C1C1;
+    border-radius: 16px;
+    padding: 15px;
+    margin-bottom: 25px;
 }
 
-.aboutTable, .aboutTable tbody tr td, .aboutTable thead th {
-    border: 1px solid black;
+#about h1 {
+    margin-bottom: 10px;
 }
 
-.aboutTable {
+#about>p {
+    margin-bottom: 10px;
+}
+
+#about .table-wrapper {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+#about .aboutTable, .aboutTable tbody tr td, .aboutTable thead th {
+    border: 1px solid #000;
+}
+
+#about .aboutTable {
     width: 100%;
+    min-width: 678.4px;
     border-collapse: collapse;
+    border-radius: 13px;
     cursor:default;
 }
 
-.aboutTable tbody tr td {
+#about .aboutTable th, .aboutTable td {
+    padding: 8px;
+}
+
+#about .aboutTable tbody tr td {
     text-align: center;
 }
 
-.aboutTable thead th {
+#about .aboutTable thead th {
     background-color: #9129D6;
-    color: white;
+    color: #FFF;
 }
 
-.aboutTable tbody tr:nth-child(odd) {
-    background-color: #f3f3f3;
+#about .aboutTable tbody tr:nth-child(even) {
+    background-color: #F6E9FF;
+    color: #000;
+}
+
+#about .aboutTable tbody tr:nth-child(odd) {
+    background-color: #FFF;
+    color: #000;
+}
+
+#about .aboutTable tbody tr:hover {
+    background-color: #ECE5F3;
+}
+
+.iframe {
+    border: 1px dashed #C1C1C1;
+    border-radius: 16px;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.iframe h1 {
+    margin-bottom: 10px;
+}
+
+#contact {
+    border: 1px dashed #C1C1C1;
+    border-radius: 16px;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+#contact h1 {
+    margin-bottom: 12px;
+}
+
+#contact .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
+
+#contact .socials a {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #9129D6;
+    margin: 10px;
+    padding: 9px 20px;
+    border-radius: 555px;
+    transition: all 0.3s ease;
+}
+
+#contact .socials a:hover {
+    transform: translateY(-3px) scale(1.05);
+    background-color: #7722AF;
+}
+
+footer {
+    font-size: 16px;
+    text-align: center;
+    background-color: #C1C1C1;
+    width: 100%;
+}
+
+@media screen and (max-width:735px) {
+    #contact .socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
