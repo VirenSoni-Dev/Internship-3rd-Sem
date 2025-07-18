@@ -1,0 +1,14 @@
+.viren {
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    /* background: repeating-linear-gradient(60deg, rgb(109, 3, 3) 10px, rgb(238, 203, 2) 20px); */
+    background: radial-gradient(white, blue, black);
+    /* transition: all 4s linear; */
+    /* animation: rotate 4s linear; */
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
