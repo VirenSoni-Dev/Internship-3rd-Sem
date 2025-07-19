@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Day 4</title>
+    <title>HTML Concepts</title>
+    <style>
+        .highlight {
+            color: rgb(233, 55, 55);
+            background-color: teal;
+            padding: 5px;
+        }
+
+        #main-title {
+            color: darkblue;
+            font-size: 24px;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="viren"></div>
+
+    <!-- This is the main title using an ID -->
+    <h1 id="main-title">Welcome to Sample Page</h1>
+
+    <!-- This paragraph uses a class -->
+    <p class="highlight">This text is styled using a class.</p>
+    <p class="highlight">This is another highlighted paragraph.</p>
+
+    <!-- Relative file path for image (assumes there's an 'images' folder) -->
+    <img src="assets/sample.jpg" alt="Sample Image" width="300">
+
+    <!-- Absolute path to an image -->
+    <img src="https://via.placeholder.com/150&quot; alt=" Placeholder Image">
+
+    <!-- Embedded iframe from YouTube -->
+    <h2>Watch this video:</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8yh9BPUBbbQ?si=tufD4kah_j71hErB" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+    
+    <audio src="assets/Alan Walker - Faded.mp3" controls></audio>
+
+    <!-- Comment: The section below links to the top using ID -->
+    <p><a href="#main-title">Back to top</a></p>
 
 </body>
+
 </html>
