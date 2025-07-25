@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 5</title>
+    <title>Booking Details</title>
     <style>
         div#maincontent {
-            height: 300px;
-            width: 500px;
+            height: 200px;
+            width: 600px;
             border: 1px solid #CEE2FA;
             text-align: left;
             color: #08438E;
@@ -21,7 +21,7 @@
             text-decoration: bold;
             text-align: center;
             margin-top: 80px;
-            width: 500px;
+            width: 600px;
             border: 1px solid #CEE2FA;
             text-align: center;
             color: #08438E;
@@ -40,35 +40,43 @@
 
 <body>
     <center>
-        <div id="heading">Movie Details</div>
+        <div id="heading">
+            <b>Theatre Drama</b>
+        </div>
         <div id="maincontent">
-            <script>
-                //Write the code to display the movie details
-                let movie = "Twilight"
-                let lang = "English"
-                let rating = 4.5
-
-                document.write(`<p>Movie: ${movie}<br>Language: ${lang}<br>Ratings: ${rating}</p>`)
-            </script>
-
             <h4>Your Ticket Details:</h4>
             <br>
             <script>
-                //Write the code to calculate the total price and discounted price for the tickets
-                let seats = 3
-                const pricePerSeat = 9
-                const festiveDiscount = 10
-                let cost = seats*pricePerSeat
-                let costWithDiscount = cost - (cost*festiveDiscount)/100
-
-                document.write(`<p>Total number of seats booked: ${seats}<br>
-                                Total cost of ${seats} tickets: $${cost}<br>
-                                Festive season discount is: ${festiveDiscount}%<br>
-                                Total cost after discount is: $${costWithDiscount}</p>`)
+                // let seats = prompt("No.of seats you want to book:")
+                let seats = 5
+                const costPerSeat = 9
+                let seatsCost = seats * costPerSeat
+                
+                if ((seats <= 2) && (seats > 0)) {
+                    document.write(`<p>You get no discount!<br>
+                        For ${seats} tickets, you need to pay: $${seatsCost}</p>`)
+                }
+                else if ((seats > 2) && (seats < 6)) {
+                    let totalCost = 0
+                    let discount = 5
+                    for (let i = 0; i < seats; i++) {
+                        let costDiscount = (costPerSeat * discount)/100
+                        let finalCostPerCustomer = costPerSeat - costDiscount
+                        document.write(`Ticked for Customer ${i+1} gets ${discount}% discount, Cost is: $${finalCostPerCustomer}<br>`)
+                        totalCost += finalCostPerCustomer
+                        discount += 2
+                    }
+                    document.write(`For ${seats} tickets, you need to pay: $${totalCost} instead of $${seatsCost}`)
+                }
+                else if (seats >= 6) {
+                    alert("Cannot book more than 5 tickets!!")
+                }
+                else {
+                    alert("Please enter valid ticket amount!!")
+                }
             </script>
         </div>
     </center>
-
 </body>
 
 </html>
